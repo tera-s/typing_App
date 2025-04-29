@@ -1,0 +1,79 @@
+.home {
+    position: relative; /* 全体のコンテナを管理 */
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* アニメーションが画面外に出ないようにする */
+}
+
+.home-body {
+    position: relative;
+    background-image: url(../image/background.png); /* 背景画像を指定 */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: absolute; /* 背景画像の前面に配置 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* 背景画像より前面に表示 */
+    overflow: hidden;
+}
+
+.main {
+    position: relative;
+    z-index: 2; /* メインコンテンツはさらに前面に配置 */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 45px;
+    width: 683px;
+    height: 200px;
+}
+
+.title {
+    width: 100%;
+    font-size: 90px;
+    font-family: 'Agbalumo';
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.btn {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#btn {
+    width: 110px;
+    font-size: 20px;
+    font-family: 'Noto Sans JP';
+    border-radius: 5px;
+    border: none;
+    box-shadow: 4px 4px 7px 0px black;
+}
+
+.signup-btn {
+    background-color: #62FF00;
+}
+
+.login-btn {
+    background-color: #EEFF00;
+}
+
+#btn:hover {
+    box-shadow: none;
+    cursor: pointer;
+}

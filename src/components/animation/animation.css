@@ -1,0 +1,22 @@
+.text-animation {
+    position: absolute;
+    bottom: 0;
+    font-size: 32px;
+    font-weight: bold;
+    animation: moveUpRotate 5s ease-in-out infinite;
+  }
+  
+  @keyframes moveUpRotate {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-50vh) rotate(360deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100vh) rotate(720deg);
+      opacity: 0;
+    }
+  }
